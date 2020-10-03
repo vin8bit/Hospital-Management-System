@@ -5,8 +5,6 @@ import java.sql.*;
 import java.io.*;
 public class Login extends JFrame implements  ActionListener 
 {
-
-	
 	String username="system";
 	String password="system";
 	JLabel userid,password1;
@@ -20,8 +18,6 @@ public class Login extends JFrame implements  ActionListener
 	public Login()
 	{
 		super("Login");
-			
-		
 		 panel=new JPanel();
 		panel.setLayout(null);
 		panel.setBounds(0,0,400,300);
@@ -75,8 +71,7 @@ public class Login extends JFrame implements  ActionListener
 		{  
 			char []c5=passwordtf.getPassword();
 			String p5=String.valueOf(c5);
-			
-			
+					
 			int i=0,i1=0;
 			if(ea.getSource()==exit)
 			{  dispose(); }
