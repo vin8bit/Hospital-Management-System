@@ -26,7 +26,7 @@ public class AddWard extends JFrame implements ActionListener
 		setLocation(200,70);
 		JPanel p=new JPanel();
 		p.setLayout(null);
-		p.setBounds(0,0,850,450);
+		p.setBounds(0,0,850,650);
 		add(p);
 		JLabel h1= new JLabel("Add New Ward");
 		Font font=new Font("Britannic",Font.PLAIN,25);
