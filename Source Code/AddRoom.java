@@ -267,11 +267,11 @@ public class AddRoom extends JFrame implements ActionListener
 							}
 						catch(Exception e){JOptionPane.showMessageDialog(this,e,"Success",JOptionPane.INFORMATION_MESSAGE);}						
 						       }
-						else{   pass1=0;  if(ph1==1) {JOptionPane.showMessageDialog(this,"Incorrect room no","Error",JOptionPane.ERROR_MESSAGE);}
+						else{   pass1=0;  if(ph1==1) {JOptionPane.showMessageDialog(this,"Incorrect Room no","Error",JOptionPane.ERROR_MESSAGE);}
 						if(ph2==1) {JOptionPane.showMessageDialog(this,"Incorrect Building no","Error",JOptionPane.ERROR_MESSAGE);}
 						if(ph3==1) {JOptionPane.showMessageDialog(this,"Incorrect Price","Error",JOptionPane.ERROR_MESSAGE);}
 						if(ph4==1) {JOptionPane.showMessageDialog(this,"Incorrect  Bed no","Error",JOptionPane.ERROR_MESSAGE);}}
-						}else{JOptionPane.showMessageDialog(this,"Roon no already add","Error",JOptionPane.ERROR_MESSAGE);}
+						}else{JOptionPane.showMessageDialog(this,"Room no already exist","Error",JOptionPane.ERROR_MESSAGE);}
 						}
 
 
