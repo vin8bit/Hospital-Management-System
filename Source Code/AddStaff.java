@@ -100,7 +100,7 @@ public class AddStaff extends JFrame implements ActionListener ,ItemListener
 		
 
 
-		l4= new JLabel("Position :");
+		l4= new JLabel("Designation :");
 		l4.setBounds(200,220,200,20);
 		ltf4= new JTextField();
 		ltf4.setBounds(520,220,150,20);
