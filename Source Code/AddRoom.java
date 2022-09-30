@@ -7,7 +7,7 @@ import java.util.*;
 public class AddRoom extends JFrame implements ActionListener
 {
 	String username="system";
-	String password="system";
+	String password="1234";
 	JLabel l1,l2,l3,l4,l5,l6,l7,l8;
 	JTextField ltf1,ltf2,ltf3,ltf4,ltf5,ltf6,ltf7,ltf8;
 	JButton submit,clear,update,delete;
