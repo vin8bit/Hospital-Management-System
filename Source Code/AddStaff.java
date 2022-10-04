@@ -91,6 +91,14 @@ public class AddStaff extends JFrame implements ActionListener ,ItemListener
 		{	ltf3.setText(((Checkbox)e.getItemSelectable()).getLabel());
 		}
 		});
+		box2.setBounds(400,180,60,10);
+		p.add(box2);
+		box3 = new Checkbox("Do Not wish to Disclose",false,group);
+		box3.addItemListener(new ItemListener() {
+		public void itemStateChanged(ItemEvent e)
+		{	ltf3.setText(((Checkbox)e.getItemSelectable()).getLabel());
+		}
+		});
 		box3.setBounds(470,180,60,10);
 		ltf3.setBounds(520,180,60,20);
 		ltf3.setEditable(false);
@@ -138,6 +146,13 @@ public class AddStaff extends JFrame implements ActionListener ,ItemListener
 		ltf6.setBounds(340,300,150,20);
 		p.add(l6);
 		p.add(ltf6);
+		
+		l7= new JLabel("Email :");
+		l7.setBounds(200,340,200,20);
+		ltf7= new JTextField();
+		ltf7.setBounds(340,340,150,20);
+		p.add(ltf7);
+		p.add(l7);
 
 		l7= new JLabel("Address :");
 		l7.setBounds(200,340,200,20);
