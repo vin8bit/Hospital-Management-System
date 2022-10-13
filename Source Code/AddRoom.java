@@ -22,7 +22,7 @@ public class AddRoom extends JFrame implements ActionListener
 	int i;
 	int pass1;
 	java.time.LocalDateTime now = java.time.LocalDateTime.now();  
-	java.time.format.DateTimeFormatter format = java.time.format.DateTimeFormatter.ofPattern("dd-MM-yyyy");  
+	java.time.format.DateTimeFormatter format = java.time.format.DateTimeFormatter.ofPattern("DD-MM-YYYY");  
         	String is = now.format(format);  
 	DateFormat time1 = new SimpleDateFormat("HH:mm:ss");
 	Calendar cal = Calendar.getInstance();
@@ -49,14 +49,14 @@ public class AddRoom extends JFrame implements ActionListener
 		p.add(h1);
 		
 		//Details
-		l1= new JLabel("Room No :");
+		l1= new JLabel("Room No. :");
 		l1.setBounds(200,100,200,20);
 		ltf1= new JTextField();
 		ltf1.setBounds(340,100,150,20);
 		p.add(l1);
 		p.add(ltf1);
 
-		l2= new JLabel("Building No :");
+		l2= new JLabel("Building No. :");
 		l2.setBounds(200,140,200,20);
 		ltf2= new JTextField();
 		ltf2.setBounds(340,140,150,20);
@@ -96,7 +96,7 @@ public class AddRoom extends JFrame implements ActionListener
 		p.add(ltf6);
 	
 
-		l7= new JLabel("Bed No :");
+		l7= new JLabel("Bed No. :");
 		l7.setBounds(200,340,200,20);
 		ltf7= new JTextField();
 		ltf7.setBounds(340,340,150,20);
@@ -311,7 +311,7 @@ public class AddRoom extends JFrame implements ActionListener
 
 			
 				if(ea.getSource()==delete)
-				{	re1=0;  String ss=JOptionPane.showInputDialog("Enter Room No");
+				{	re1=0;  String ss=JOptionPane.showInputDialog("Enter Room No.");
 
 					try{
 						Class.forName("oracle.jdbc.driver.OracleDriver");
