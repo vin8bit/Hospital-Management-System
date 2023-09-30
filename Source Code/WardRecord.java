@@ -9,7 +9,7 @@ public class WardRecord extends JFrame implements ActionListener
 {
 	JTextField tf1;
 	JButton b1,b2;
-	String columns[]={"Room no","Floor","Building","Room type","Numbe of bed","Unit price"};
+	String columns[]={"Room no:","Floor no:","Building","Room type","Number of bed","Unit price"};
 	TableModel tmodel;
 	JTable jtable;
 	TableRowSorter<TableModel> rsorter;
