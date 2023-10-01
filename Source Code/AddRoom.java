@@ -9,8 +9,8 @@ import java.util.*;
 
 public class AddRoom extends JFrame implements ActionListener
 {
-	String username="system";
-	String password="charu@123";
+	String username="username";
+	String password="password";
 	JLabel l1,l2,l3,l4,l5,l6,l7,l8;
 	JTextField ltf1,ltf2,ltf3,ltf4,ltf5,ltf6,ltf7,ltf8;
 	JButton submit,clear,update,delete;
@@ -22,9 +22,9 @@ public class AddRoom extends JFrame implements ActionListener
 	int i;
 	int pass1;
 	java.time.LocalDateTime now = java.time.LocalDateTime.now();  
-	java.time.format.DateTimeFormatter format = java.time.format.DateTimeFormatter.ofPattern("dd-MM-yyyy");  
+	java.time.format.DateTimeFormatter format = java.time.format.DateTimeFormatter.ofPattern("DD-MM-YYYY");  
         	String is = now.format(format);  
-	DateFormat time1 = new SimpleDateFormat("HH:mm:ss");
+	DateFormat time1 = new SimpleDateFormat("HH:MM:SS");
 	Calendar cal = Calendar.getInstance();
 	String tim=time1.format(cal.getTime());
 	int re=0,re1=0,ph1,ph2,ph3,ph4;
